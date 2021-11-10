@@ -1,0 +1,105 @@
+.contact-container {
+    width: 80%;
+    margin: 50px auto;
+}
+
+#contact-head{
+    font-size: 25px;
+    border-bottom: 10px solid #fca738;
+}
+  
+  
+.icons{
+      font-size:24px;
+    color:#858585;
+    margin-right: 10px;
+}
+  .contact-box {
+    display: flex;
+    margin-top: 30px;
+  }
+  
+  .connect-info {
+    flex-basis: 50%;
+    text-align: left;
+    background: #fff;
+    padding: 60px 100px;
+    box-sizing: border-box;
+  }
+  
+  .connect-info span {
+    color: #858585;
+  }
+  
+  .query-send-box {
+    flex-basis: 50%;
+    text-align: left;
+    background-color: #fbf3e4;
+    padding: 60px 100px;
+    box-sizing: border-box;
+  }
+  
+  .query-send-box h3 {
+    font-size: 26px;
+    color: #105652;
+  }
+  
+  .query-send-box form input {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    padding: 4px;
+    margin: 5px 0;
+  }
+  
+  .query-send-box form textarea {
+    width: 100%;
+    outline: none;
+    border-radius: 4px;
+    border: 1px solid #e0e0e0;
+    padding: 4px;
+    margin: 5px 0;
+  }
+  
+  .query-send-box form span {
+    color: red;
+  }
+  
+  .query-send-box form button {
+    color: #fff;
+    background-color: #fca738;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    padding: 8px 24px;
+    margin: 30px 0;
+    cursor: pointer;
+  }
+  
+  .query-send-box form button:disabled {
+    background-color: lightgray;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .contact-container {
+      width: 100%;
+    }
+  
+    .contact-box {
+      flex-direction: column;
+    }
+  
+    .connect-info {
+      padding: 20px 40px;
+    }
+  
+    .query-send-box {
+      padding: 20px 40px;
+    }
+  
+    .contact-container .underline {
+      width: 52%;
+    }
+  }
+  
