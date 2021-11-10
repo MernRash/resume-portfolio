@@ -1,157 +1,151 @@
 .resume-container {
-    width: 80%;
-    margin: 50px auto;
-    display: flex;
-    justify-content: space-between;
+  width: 80%;
+  margin: 50px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.head span {
+  font-size: 35px;
+  font-weight: 700;
+  color: #105652;
+  border-bottom: 10px solid #fca738;
+}
+
+.head {
+  justify-content: center;
+}
+
+.info-resume-container {
+  flex-basis: 70%;
+  margin-right: 20px;
+  color: #105652;
+  text-align: left;
+}
+
+.resume-img-box {
+  flex-basis: 30%;
+}
+
+.resume-img-box img {
+  width: 380px;
+  background: #fff;
+  border-radius: 10px;
+}
+
+.resume-img-box .social-links {
+  margin-top: 10px;
+  display: flex;
+  padding: 20px 0;
+  justify-content: space-evenly;
+  background-color: #fff;
+  border-radius: 10px;
+  font-size: 30px;
+}
+
+.experience-container p,
+.education-container p {
+  margin-top: -10px;
+}
+
+.experience-container span,
+.education-container span {
+  background-color: #fca738;
+  color: #fff;
+  border-radius: 15px;
+  padding: 4px 8px;
+  font-size: 14px;
+  float: right;
+  margin-top: -60px;
+}
+
+.experience-container,
+.education-container {
+  position: relative;
+}
+
+.experience-container .experience-text,
+.education-container .education-text {
+  margin-left: 18px;
+}
+
+.experience-container .experience-text .flex:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 80px;
+  z-index: 1;
+  width: 2px;
+  height: 59%;
+}
+
+.education-container .education-text .flex:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: 0px;
+  top: 80px;
+  z-index: 0;
+  width: 2px;
+  height: 70%;
+}
+
+.experience-container .experience-text h4:before,
+.education-container .education-text h4:before {
+  content: "";
+  background-color: #09bcab;
+  position: absolute;
+  display: inline-block;
+  left: -6.5px;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media screen and (max-width: 800px) {
+  .resume-container {
+    width: 100%;
   }
-  
-  .head span {
-    font-size: 35px;
-    font-weight: 700;
-    color: #105652;
-    border-bottom: 10px solid #fca738;
+
+  .resume-container .underline {
+    width: 38%;
   }
-  
-  .head {
-    justify-content: center;
+
+  .resume-container {
+    flex-direction: column;
   }
-  
+
   .info-resume-container {
-    flex-basis: 70%;
-    margin-right: 20px;
-    color: #105652;
-    text-align: left;
+    flex-basis: 100%;
+    margin-right: 0px;
+    padding: 0 40px;
   }
-  
+
   .resume-img-box {
-    flex-basis: 30%;
+    flex-basis: 100%;
   }
-  
+
   .resume-img-box img {
-    width: 380px;
-    background: #fff;
-    border-radius: 10px;
+    margin-top: 25px;
+    width: 280px;
   }
-  
-  .resume-img-box .social-links {
-    margin-top: 10px;
-    display: flex;
-    padding: 20px 0;
-    justify-content: space-evenly;
-    background-color: #fff;
-    border-radius: 10px;
-    font-size: 30px;
-  }
-  
-  .experience-container p,
-  .education-container p {
-    margin-top: -10px;
-  }
-  
+
   .experience-container span,
   .education-container span {
-    background-color: #fca738;
-    color: #fff;
-    border-radius: 15px;
-    padding: 4px 8px;
-    font-size: 14px;
-    float: right;
-    margin-top: -60px;
+    font-size: 12px;
+    float: none;
+    margin-top: 0;
   }
-  
-  .experience-container,
-  .education-container {
-    position: relative;
+
+  .resume-img-box {
+    margin: 0 40px;
   }
-  
-  .experience-container .experience-text,
-  .education-container .education-text{
-    margin-left: 18px;
+
+  .flex {
+    flex-direction: column;
   }
-  
-  .experience-container .experience-text .flex:before {
-    content: "";
-    background-color: #09bcab;
-    position: absolute;
-    display: inline-block;
-    left: 0px;
-    top: 80px;
-    z-index: 1;
-    width: 2px;
-    height: 59%;
-  }
-  
- 
-  .education-container .education-text .flex:before {
-    content: "";
-    background-color: #09bcab;
-    position: absolute;
-    display: inline-block;
-    left: 0px;
-    top: 80px;
-    z-index: 0;
-    width: 2px;
-    height: 70%;
-  }
-  
-  .experience-container .experience-text h4:before,
-  .education-container .education-text h4:before {
-    content: "";
-    background-color: #09bcab;
-    position: absolute;
-    display: inline-block;
-    left: -6.5px;
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    z-index: 1;
-  }
-  
-  @media screen and (max-width: 800px) {
-    .resume-container {
-      width: 100%;
-    }
-  
-    .resume-container .underline {
-      width: 38%;
-    }
-  
-    .resume-container {
-      flex-direction: column;
-    }
-  
-    .info-resume-container {
-      flex-basis: 100%;
-      margin-right: 0px;
-      padding: 0 40px;
-    }
-  
-    .resume-img-box {
-      flex-basis: 100%;
-    }
-  
-    .resume-img-box img {
-      margin-top: 25px;
-      width: 280px;
-    }
-  
-    .experience-container span,
-    .education-container span {
-      font-size: 12px;
-      float: none;
-      margin-top: 0;
-    }
-  
-    .resume-img-box {
-      margin: 0 40px;
-    }
-  
-    .flex {
-      flex-direction: column;
-    }
-  
-    /* .align-items {
-      align-items: flex-start;
-    } */
-  }
-  
+}

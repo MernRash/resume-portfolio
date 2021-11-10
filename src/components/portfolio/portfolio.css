@@ -1,100 +1,94 @@
 .projects-container {
-    width: 80%;
-    margin: 40px auto;
-    
-  }
-  
+  width: 80%;
+  margin: 40px auto;
+}
 
-  .projects-container span {
-    font-size: 2rem;
-    border-bottom: 10px solid #fca738;
-    
+.projects-container span {
+  font-size: 2rem;
+  border-bottom: 10px solid #fca738;
+}
+
+.projects-img-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+.projects-img-container .items {
+  background: transparent;
+  height: 250px;
+  margin: 10px 0;
+  background-position: center;
+  background-size: cover;
+  border-radius: 10px;
+  position: relative;
+}
+
+.projects-img-container .items:hover {
+  background: rgb(251, 234, 175);
+  transition: 0.5s;
+  border: 2px solid #105652;
+  box-sizing: border-box;
+}
+
+.projects-img-container h3 {
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0%;
+  position: absolute;
+  opacity: 0;
+  transition: 0.5s;
+  z-index: 1;
+}
+
+.projects-img-container .items:hover h3 {
+  opacity: 1;
+  bottom: 32%;
+}
+
+.projects-img-container .item1 {
+  width: 400px;
+  background-image: url(../images/portfolio.png);
+  background: cover;
+}
+
+.projects-img-container .item2 {
+  width: 300px;
+  background-image: url(../images/sahara.png);
+}
+
+.projects-img-container .item3 {
+  width: 500px;
+  background-image: url(../images/car_animatopn.png);
+}
+
+.projects-img-container .item4 {
+  width: 300px;
+  background-image: url(../images/react_employee.png);
+}
+
+.projects-img-container .item5 {
+  width: 500px;
+  background-image: url(../images/clock.png);
+}
+
+.projects-img-container .item6 {
+  width: 400px;
+  background-image: url(../images/todo.png);
+}
+
+@media screen and (max-width: 800px) {
+  .projects-container {
+    width: 100%;
   }
-  
+
   .projects-img-container {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    margin-top: 20px;
+    justify-content: center;
   }
+
   .projects-img-container .items {
-    background: transparent;
-    height: 250px;
-    margin: 10px 0;
-    background-position: center;
-    background-size: cover;
-    border-radius: 10px;
-    position: relative;
-  }
-  
-  .projects-img-container .items:hover {
-    background: rgb(251, 234, 175);
-    transition: 0.5s;
-    border: 2px solid #105652;
-    box-sizing: border-box;
-  }
-  
-  .projects-img-container h3 {
-    left: 50%;
-    transform: translateX(-50%);
-    bottom: 0%;
-    position: absolute;
-    opacity: 0;
-    transition: 0.5s;
-    z-index: 1;
-  }
-  
-  .projects-img-container .items:hover h3 {
-    opacity: 1;
-    bottom: 32%;
-  }
-  
-  .projects-img-container .item1 {
-    width: 400px;
-    background-image: url(../images/portfolio.png);
-    background: cover;
-  }
-  
-  .projects-img-container .item2 {
     width: 300px;
-    background-image: url(../images/sahara.png);
+    pointer-events: none;
+    margin: 10px;
   }
-  
-  .projects-img-container .item3 {
-    width: 500px;
-    background-image: url(../images/car_animatopn.png);
-  }
-  
-  .projects-img-container .item4 {
-    width: 300px;
-    background-image: url(../images/react_employee.png);
-  }
-  
-  .projects-img-container .item5 {
-    width: 500px;
-    background-image: url(../images/clock.png);
-  }
-  
-  .projects-img-container .item6 {
-    width: 400px;
-    background-image: url(../images/todo.png);
-  }
-  
-  @media screen and (max-width: 800px) {
-    .projects-container {
-      width: 100%;
-    }
-  
-   
-  
-    .projects-img-container {
-      justify-content: center;
-    }
-  
-    .projects-img-container .items {
-      width: 300px;
-      pointer-events: none;
-      margin: 10px;
-    }
-  }
-  
+}

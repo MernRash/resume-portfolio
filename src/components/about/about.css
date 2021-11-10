@@ -1,89 +1,84 @@
-.About-me-image  {
-    display: flex;
-    width: 80%;
-    margin: 50px auto;
-    border-radius: 20px;
-    box-shadow: 0 0 60px #10565221;
-  }
-  
-  .img-about {
-    flex-basis: 50%;
-  }
-  
-  .img-about img {
-    width: 400px;
-    margin: 50px;
-  }
-  
-  .About-me-text {
-    color: #105652;
-    margin: 10px 20px;
-    padding: 20px;
-    text-align: left;
-    flex-basis: 50%;
-    box-sizing: border-box;
-  }
-  
-  .About-me-text span {
-    font-size: 35px;
-    font-weight: 700;
-    border-bottom: 10px solid #fca738;
-  }
-  
+.About-me-image {
+  display: flex;
+  width: 80%;
+  margin: 50px auto;
+  border-radius: 20px;
+  box-shadow: 0 0 60px #10565221;
+}
 
-  
-  .libraries-logo {
-    padding: 1px 10px;
-    border-radius: 20px;
-    box-shadow: 0 0 30px #00000029;
-    margin: 50px 0 25px 0;
+.img-about {
+  flex-basis: 50%;
+}
+
+.img-about img {
+  width: 400px;
+  margin: 50px;
+}
+
+.About-me-text {
+  color: #105652;
+  margin: 10px 20px;
+  padding: 20px;
+  text-align: left;
+  flex-basis: 50%;
+  box-sizing: border-box;
+}
+
+.About-me-text span {
+  font-size: 35px;
+  font-weight: 700;
+  border-bottom: 10px solid #fca738;
+}
+
+.libraries-logo {
+  padding: 1px 10px;
+  border-radius: 20px;
+  box-shadow: 0 0 30px #00000029;
+  margin: 50px 0 25px 0;
+}
+
+.libraries-logo h5 {
+  font-weight: 600;
+}
+
+.libraries-logo h5::after {
+  height: 2px;
+  background-color: #105652;
+  width: 50px;
+  z-index: 5;
+}
+
+.libraries-logo-flex {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: space-around;
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.libraries-logo img {
+  height: 50px;
+  width: 50px;
+}
+
+@media screen and (max-width: 800px) {
+  .About-me-image {
+    flex-direction: column-reverse;
+    width: 100%;
+    border-radius: 0px;
   }
-  
-  .libraries-logo h5 {
-    font-weight: 600;
+
+  .About-me-text span {
+    text-align: center;
   }
-  
-  .libraries-logo h5::after {
-    height: 2px;
-    background-color: #105652;
-    width: 50px;
-    z-index: 5;
+
+  .img-about img {
+    width: 280px;
+    margin: 25px;
   }
-  
-  .libraries-logo-flex {
-    display: flex;
-    margin-bottom: 10px;
-    justify-content: space-around;
-    margin-bottom: 15px;
-    flex-wrap: wrap;
-  }
-  
+
   .libraries-logo img {
-    height: 50px;
-    width: 50px;
+    height: 38px;
+    width: 38px;
   }
-  
-  @media screen and (max-width: 800px) {
-    .About-me-image {
-      flex-direction: column-reverse;
-      width: 100%;
-      border-radius: 0px;
-    }
-  
-    .About-me-text span {
-      text-align: center;
-    }
-  
-  
-  
-    .img-about img {
-      width: 280px;
-      margin: 25px;
-    }
-  
-    .libraries-logo img {
-      height: 38px;
-      width: 38px;
-    }
-  }
-  
+}

@@ -1,79 +1,78 @@
 .main-navbar {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    background-color: #fbf3e4;
-    align-items: center;
-    box-sizing: border-box;
-    padding: 10px 0;
-    position: fixed;
-    z-index: 5;
-  }
-  
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: #fbf3e4;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 10px 0;
+  position: fixed;
+  z-index: 5;
+}
+
+.main-navbar span {
+  color: #105652;
+  font-size: 30px;
+  font-weight: 700;
+}
+
+.navLinks ul {
+  list-style: none;
+  display: flex;
+  font-size: 1.25rem;
+}
+
+.navLinks a {
+  margin-left: 50px;
+  color: #424242;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.navLinks a:hover {
+  color: #fca738;
+}
+
+.hamburg-menu {
+  display: none;
+  z-index: 3;
+}
+
+.nav-responsive {
+  background-color: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  z-index: 2;
+}
+
+.nav-responsive ul {
+  list-style: none;
+  text-align: left;
+}
+
+.nav-responsive ul a {
+  margin: 50px 0;
+  color: #105652;
+  font-weight: 500;
+  text-decoration: none;
+  line-height: 60px;
+}
+
+@media screen and (max-width: 800px) {
   .main-navbar span {
-    color: #105652;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 25px;
   }
-  
-  .navLinks ul {
-    list-style: none;
-    display: flex;
-    font-size: 1.25rem;
-  }
-  
-  .navLinks a {
-    margin-left: 50px;
-    color: #424242;
-    cursor: pointer;
-    text-decoration: none;
-  }
-  
-  .navLinks a:hover {
-    color: #fca738;
-  }
-  
-  .hamburg-menu {
+
+  .navLinks {
     display: none;
-    z-index: 3;
   }
-  
-  .nav-responsive {
-    background-color: #fff;
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 250px;
-    height: 100vh;
-    z-index: 2;
-  }
-  
-  .nav-responsive ul {
-    list-style: none;
-    text-align: left;
-  }
-  
-  .nav-responsive ul a{
-    margin: 50px 0;
+
+  .hamburg-menu {
+    display: block;
     color: #105652;
-    font-weight: 500;
-    text-decoration: none;
-    line-height: 60px;
+    font-size: 25px;
   }
-  
-  @media screen and (max-width: 800px) {
-    .main-navbar span {
-      font-size: 25px;
-    }
-  
-    .navLinks {
-      display: none;
-    }
-  
-    .hamburg-menu {
-      display: block;
-      color: #105652;
-      font-size: 25px;
-    }
-  }
-  
+}
