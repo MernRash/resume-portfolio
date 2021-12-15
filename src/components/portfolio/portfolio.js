@@ -63,6 +63,16 @@ class Portfolio extends Component {
               <h3>ToDo List</h3>
             </div>
           </a>
+      
+       <a
+            href="https://mernrash-blog.netlify.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <div className="item7 items">
+              <h3>React Blog App</h3>
+            </div>
+          </a>
         </div>
       </div>
     );
