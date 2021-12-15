@@ -77,6 +77,10 @@
   background-image: url(../images/todo.png);
 }
 
+.projects-img-container .item7 {
+  width: 400px;
+  background-image: url(../images/todo.png);
+}
 @media screen and (max-width: 800px) {
   .projects-container {
     width: 100%;
