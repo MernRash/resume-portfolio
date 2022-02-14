@@ -79,7 +79,6 @@ class Contact extends Component {
               <input
                 type="tel"
                 pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
-                maxlength="12"
                 autoComplete="off"
                 value={this.state.contact}
                 onChange={this.inputChange}

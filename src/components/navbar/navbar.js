@@ -15,27 +15,27 @@ function Navbar() {
       <div className={showNavLinks ? "nav-responsive" : "navLinks"}>
         <ul>
           <li>
-            <Link spy={true} smooth={true} duration={1000} to="Banner">
+            <Link onClick={showNavLinks?() => setShowNavLinks(!showNavLinks):null} spy={true} smooth={true} duration={1000} to="Banner">
               Home
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={1000} to="About">
+            <Link onClick={showNavLinks?() => setShowNavLinks(!showNavLinks):null} spy={true} smooth={true} duration={1000} to="About">
               About
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={1000} to="Portfolio">
+            <Link onClick={showNavLinks?() => setShowNavLinks(!showNavLinks):null} spy={true} smooth={true} duration={1000} to="Portfolio">
               Portfolio
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={1000} to="Resume">
+            <Link onClick={showNavLinks?() => setShowNavLinks(!showNavLinks):null} spy={true} smooth={true} duration={1000} to="Resume">
               Resume
             </Link>
           </li>
           <li>
-            <Link spy={true} smooth={true} duration={1000} to="Contact">
+            <Link onClick={showNavLinks?() => setShowNavLinks(!showNavLinks):null} spy={true} smooth={true} duration={1000} to="Contact">
               Contact
             </Link>
           </li>

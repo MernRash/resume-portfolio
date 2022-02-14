@@ -6,6 +6,7 @@ import JS_Img from "../images/js-logo.png";
 import React_Img from "../images/react-logo.png";
 import Git_Img from "../images/github-logo.png";
 import Netlify_Img from "../images/netlify-logo.png";
+import Node_logo from '../images/node_logo.png';
 import "./about.css";
 
 class About extends Component {
@@ -41,6 +42,8 @@ class About extends Component {
               <img src={React_Img} alt="react-logo" />
               <img src={Git_Img} alt="github-logo" />
               <img src={Netlify_Img} alt="netlify-logo" />
+              <img src={Node_logo} alt="node-logo" />
+              
             </div>
           </div>
         </div>
