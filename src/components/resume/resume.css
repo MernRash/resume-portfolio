@@ -43,6 +43,19 @@
   font-size: 30px;
 }
 
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.flex h4{
+  width: 250px;
+}
+.education-year{
+  margin: 0;
+  padding: 0 8px;
+}
 .experience-container p,
 .education-container p {
   margin-top: -10px;
@@ -78,7 +91,7 @@
   top: 80px;
   z-index: 1;
   width: 2px;
-  height: 59%;
+  height: 66%;
 }
 
 .education-container .education-text .flex:before {

@@ -22,9 +22,8 @@ class Resume extends Component {
                     <div>
                       <h4>Digital Marketing Intern - Full Time</h4>
                       <p>Offshoots Books Pvt. Ltd., Delhi.</p>
-
-                      <span>Jun '19 - Aug '19</span>
                     </div>
+                    <span>Jun '19 - Aug '19</span>
                   </div>
 
                   <div className="flex">
@@ -40,7 +39,15 @@ class Resume extends Component {
                       <h4>UI Developer - Full Time</h4>
                       <p>Ratna Sagar Pvt. Ltd., Delhi.</p>
                     </div>
-                    <span>Jul '21 - Present</span>
+                    <span>Jul '21 - Oct '22</span>
+                  </div>
+
+                  <div className="flex">
+                    <div>
+                      <h4>Associate UI Developer - Full Time</h4>
+                      <p>Media.net Pvt. Ltd., Mumbai.</p>
+                    </div>
+                    <span>Oct '22 - Present</span>
                   </div>
                 </div>
               </div>
@@ -55,7 +62,7 @@ class Resume extends Component {
                       </h4>
                       <p>Bachelor of Computer Application</p>
                     </div>
-                    <span>2017-2020</span>
+                    <span className="education-year">2017-2020</span>
                   </div>
                 </div>
               </div>
@@ -77,7 +84,7 @@ class Resume extends Component {
                 >
                   <BsInstagram />
                 </a>
-                {/* <a href="https://twitter.com/VirajMerai" target="_blank" rel="noreferrer"><AiFillTwitterCircle/></a> */}
+                
                 <a
                   href="https://github.com/MernRash"
                   target="_blank"

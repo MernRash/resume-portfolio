@@ -7,6 +7,8 @@ import React_Img from "../images/react-logo.png";
 import Git_Img from "../images/github-logo.png";
 import Netlify_Img from "../images/netlify-logo.png";
 import Node_logo from '../images/node_logo.png';
+import Vue_logo from '../images/vue_js.svg';
+import Wordpress_logo from '../images/wordpress-blue.svg';
 import "./about.css";
 
 class About extends Component {
@@ -20,7 +22,7 @@ class About extends Component {
           <span>About Me</span>
 
           <p>
-            I am Web Designer or Front-end Developer with 10 Months of Training
+            I am Web Designer or Front-end Developer with 1.5+ yrs of Working
             Experience. I'm Interested in all kinds of visual Communication, but
             my Major focus is on designing web, mobile {"&"} tablet interfaces.
             i also have skills in other fields like branding, Digital
@@ -43,6 +45,8 @@ class About extends Component {
               <img src={Git_Img} alt="github-logo" />
               <img src={Netlify_Img} alt="netlify-logo" />
               <img src={Node_logo} alt="node-logo" />
+              <img src={Vue_logo} alt="vue-js-logo" />
+              <img src={Wordpress_logo} alt="Wordpress-logo" />
               
             </div>
           </div>
