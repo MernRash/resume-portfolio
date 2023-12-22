@@ -22,7 +22,7 @@ class About extends Component {
           <span>About Me</span>
 
           <p>
-            I am Web Designer or Front-end Developer with 1.5+ yrs of Working
+            I am Web Designer / Front-end Developer with 3+ yrs of Working
             Experience. I'm Interested in all kinds of visual Communication, but
             my Major focus is on designing web, mobile {"&"} tablet interfaces.
             i also have skills in other fields like branding, Digital

@@ -48,17 +48,17 @@ class Contact extends Component {
             </p>
             <div className="flex">
               <AiOutlineMail className="icons" />
-              <span>r.shrestha72744@gmail.com</span>
+              <span>therhaul.shrestha1401@gmail.com</span>
             </div>
             <br />
             <div className="flex">
               <MdPhoneInTalk className="icons" />
-              <span>+91 8527356648</span>
+              <span>+1 (437) 733-9947</span>
             </div>
             <br />
             <div className="flex">
               <MdLocationPin className="icons" />
-              <span>Delhi, India.</span>
+              <span>Hamilton,Ontario.</span>
             </div>
           </div>
           <div className="query-send-box">

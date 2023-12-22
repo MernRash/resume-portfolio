@@ -47,7 +47,7 @@ class Resume extends Component {
                       <h4>Associate UI Developer - Full Time</h4>
                       <p>Media.net Pvt. Ltd., Mumbai.</p>
                     </div>
-                    <span>Oct '22 - Present</span>
+                    <span>Oct '22 - Dec '23</span>
                   </div>
                 </div>
               </div>

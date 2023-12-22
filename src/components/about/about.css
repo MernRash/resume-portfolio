@@ -55,7 +55,7 @@
   justify-content: space-around;
   margin-bottom: 15px;
   flex-wrap: wrap;
-  width: 450px;
+  width: auto;
 }
 
 .libraries-logo img {
@@ -78,6 +78,10 @@
     width: 280px;
     margin: 25px;
   }
+  .libraries-logo-flex{
+      display: flex;
+      justify-content: space-around;
+  }
 
   .libraries-logo img {
     height: 38px;
@@ -90,7 +94,7 @@
   .libraries-logo-flex{
     display: inline-block;
     text-align: center;
-    width: 250px;
+    width: auto;
   }
   
 }
