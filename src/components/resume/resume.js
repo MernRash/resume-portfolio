@@ -55,6 +55,15 @@ class Resume extends Component {
                 <h3>Education</h3>
                 <hr />
                 <div className="education-text">
+                <div className="flex">
+                    <div>
+                      <h4>
+                        Mohawk College, Hamilton, ON, Canada
+                      </h4>
+                      <p>Cyber Security Analytics</p>
+                    </div>
+                    <span className="education-year">2024-present</span>
+                  </div>
                   <div className="flex">
                     <div>
                       <h4>
