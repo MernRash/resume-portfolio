@@ -48,7 +48,7 @@ class Contact extends Component {
             </p>
             <div className="flex">
               <AiOutlineMail className="icons" />
-              <span>therhaul.shrestha1401@gmail.com</span>
+              <span>rahul.shrestha1499@gmail.com</span>
             </div>
             <br />
             <div className="flex">
