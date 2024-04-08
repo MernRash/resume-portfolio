@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { MdPhoneInTalk, MdLocationPin } from "react-icons/md";
 import swal from "sweetalert";
+import emailjs from 'emailjs-com';
+
 import "./contact.css";
 
 class Contact extends Component {
@@ -9,6 +11,7 @@ class Contact extends Component {
     name: "",
     contact: "",
     email: "",
+    message:"",
   };
 
   messege = () => {
@@ -25,16 +28,31 @@ class Contact extends Component {
 
   handleForm = (e) => {
     e.preventDefault();
-    this.setState({ name: "", contact: "", email: "" });
-    this.messege();
-  };
+    
+    emailjs.sendForm('service_paj1dwg', 'template_ztdn29w', e.target, 'yauCcxjD43YUEJV8O')
+      .then((result) => {
+          console.log(result.text);
+          swal({
+              title: "Thank You!",
+              text: "Your message has been successfully sent.",
+              icon: "success",
+              button: "Back",
+          });
+          this.setState({ name: "", contact: "", email: "",message:"" });
+          this.messege();
+      }, (error) => {
+          console.log(error.text);
+          swal({
+              title: "Failed to send",
+              text: "Unfortunately, there was an issue sending your message. Please try again later.",
+              icon: "error",
+              button: "Back",
+          });
+      });
+};
+
 
   render() {
-    const btn =
-      this.state.name.length < 1 ||
-      this.state.contact.length < 1 ||
-      this.state.email.length < 1;
-
     return (
       <div className="contact-container" id="Contact">
         <span id="contact-head">Contact Me</span>
@@ -63,13 +81,14 @@ class Contact extends Component {
           </div>
           <div className="query-send-box">
             <h3>Send me a message</h3>
-            <form>
+            <form onSubmit={this.handleForm}>
               First {"&"} Last Name: <span>*</span>
               <br />
               <input
                 type="text"
                 autoComplete="off"
                 value={this.state.name}
+                name="from_name"
                 onChange={this.inputChange}
                 id="name"
               />
@@ -78,7 +97,7 @@ class Contact extends Component {
               <br />
               <input
                 type="tel"
-                pattern="[0-9]{3} [0-9]{3} [0-9]{4}"
+                pattern="[0-9]{3}[0-9]{3}[0-9]{4}"
                 autoComplete="off"
                 value={this.state.contact}
                 onChange={this.inputChange}
@@ -90,15 +109,16 @@ class Contact extends Component {
               <input
                 type="email"
                 value={this.state.email}
+                name="reply_to"
                 onChange={this.inputChange}
                 id="email"
               />
               <br />
               Message:
               <br />
-              <textarea rows="4" />
+              <textarea rows="4" id="message" value={this.state.message} onChange={this.inputChange} name="message" />
               <br />
-              <button onClick={this.handleForm} disabled={btn}>
+              <button>
                 Send Message
               </button>
             </form>
